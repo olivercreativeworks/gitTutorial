@@ -39,9 +39,11 @@ class ViewController: UIViewController {
     @objc private func changeButtonColorOnClick(){
         if button.backgroundColor == .systemCyan {
             button.backgroundColor = .systemGreen
+            view.backgroundColor = .white
         }
         else{
             button.backgroundColor = .systemCyan
+            view.backgroundColor = .black
         }
     }
     
