@@ -19,9 +19,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .systemRed
+        self.setup()
         
+        // Do any additional setup after loading the view.
+    }
+    
+    private func setup(){
         self.view.addSubview(self.button)
-        
+
         self.button.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -29,7 +34,6 @@ class ViewController: UIViewController {
             button.widthAnchor.constraint(equalToConstant: 120),
             button.heightAnchor.constraint(equalToConstant: 120)
         ])
-        // Do any additional setup after loading the view.
     }
 
 
