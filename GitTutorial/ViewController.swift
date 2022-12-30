@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .systemRed
         self.setup()
-        
+        button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
     
@@ -35,6 +35,16 @@ class ViewController: UIViewController {
             button.heightAnchor.constraint(equalToConstant: 120)
         ])
     }
+    
+    @objc private func buttonClicked(){
+        if button.backgroundColor == .systemCyan {
+            button.backgroundColor = .systemGreen
+        }
+        else{
+            button.backgroundColor = .systemCyan
+        }
+    }
+    
 
 
 }
