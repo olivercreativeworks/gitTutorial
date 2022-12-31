@@ -11,7 +11,7 @@ class SecondViewController: UIViewController {
     
     private var button:UIButton = {
         let button = UIButton()
-        button.setTitle("Click Me2", for: .normal)
+        button.setTitle("Click Me Too", for: .normal)
         button.backgroundColor = .systemCyan
         return button
     }()
