@@ -8,6 +8,7 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+
     
     private var button:UIButton = {
         let button = UIButton()
@@ -39,6 +40,7 @@ class SecondViewController: UIViewController {
         let vc = ViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
+
 
     
     /*
